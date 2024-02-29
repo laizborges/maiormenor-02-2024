@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade</title>
+    <link rel="stylesheet" href="instyle.css">
+
+</head>
+
+<body>
+
+    <div class="formulario">
+       <header> <h1>ABSOLUT, O MELHOR DA VODKA</h1>  </header>
+         
+          <img src="rosaabso.jfif" alt="">
+           <img src="Vodka-Absolut.jpg" alt="">
+          <img src="amareloabso.jfif" alt="">
+
+        <div class="pf"> <p>Por favor, insira a sua idade para verificação</p>
+        <input type="number" name="" id="idadeInput">
+        <button onclick="verificarIdade()">verificar</button></div>
+     
+    </div>
+
+   
+
+
+
+
+    <script>
+        function verificarIdade() {
+            var idade = parseInt(document.getElementById("idadeInput").value);
+
+            if (idade >= 18) {
+                window.location.href = 'maior.html';
+            } else {
+                window.location.href = 'menor.html';
+            }
+        }
+    </script>
+
+ <footer>
+    <p>desenvolvido por Laiz Borges em 02/2024</p>
+ </footer>
+
+
+
+
+
+</body>
+
+</html>
